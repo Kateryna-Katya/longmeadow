@@ -109,3 +109,184 @@ gap: 30px;
     display: block;
  }
 }
+/* Three steps. No tricks. */
+.three-section{
+background-image: url("/img/three/mob.png");
+background-repeat: no-repeat;
+background-position: top center;
+background-size: cover;
+}
+.three-swiper{
+    margin-top: 30px;
+}
+.three-swiper .swiper-slide{
+box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background: #e8f5e8;
+    border-radius: 14px;
+        width: 320px;
+        height: 298px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 37px;
+}
+.number{
+    margin-top: 20px;
+    margin-bottom: 16px;
+    font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 1.5;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #5fb85f;
+}
+.three-title-slide{
+    font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.75;
+        text-align: center;
+        color: #101828;
+        margin-bottom: 10px;
+}
+.three-text-slide{
+    width: 273px;
+}
+.three-swiper .swiper-slide-two{
+    background: #f5f5f0;
+}
+.number-two{
+    color: #f4b183;
+}
+.three-swiper .swiper-slide-three{
+background: #e8f2f8;
+}
+.number-three{
+    color: #6ba8d4;
+}
+.arrow{
+stroke:#151515;
+}
+.swiper-pagination {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.swiper-pagination-bullet {
+    width: 4px !important;
+    height: 4px !important;
+    background: rgba(21, 21, 21, 0.6) !important;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+    width: 6px !important;
+    height: 6px !important;
+    background: #151515 !important;
+}
+.swiper-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+    width: 134px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover{
+background: #729c72;
+border: inherit;
+}
+.btn:hover .arrow{
+stroke:white;
+}
+@media only screen and (min-width: 1440px) {
+  .swiper-nav{
+    display: none;
+  }
+  .three-swiper .swiper-wrapper{
+    justify-content: center;
+    gap: 44px;
+  }
+  .three-swiper .swiper-slide{
+    height: 320px;
+  }
+  .core-title-slide{
+    font-size: 20px;
+  }
+}
+/* CORE MECHANICS */
+.core-container{
+    padding-left: 53px;
+    padding-right: 53px;
+}
+.core-swiper{
+    margin-top: 30px;
+}
+.core-swiper-nav{
+    width: 164px;
+}
+.core-swiper .swiper-slide{
+    border: 1px solid rgba(229, 231, 235, 0.6);
+        border-radius: 14px;
+        padding: 1px;
+        width: 269px;
+        height: 209px;
+        background: #f5f5f0;
+        padding: 33px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+}
+.core-title-slide{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #101828;
+}
+.core-text-slide{
+    text-align: left;
+}
+@media only screen and (min-width: 1440px) {
+  .core-container{
+    padding-left: 144px;
+    padding-right: 144px;
+  }
+  .core-swiper .swiper-wrapper{
+    flex-direction: column;
+     flex-wrap: wrap;
+    gap: 48px;
+    height: 511px;
+    column-gap: 48px;
+  }
+  .core-swiper .swiper-slide{
+    width: 352px;
+        height: 231px;
+  }
+  .core-title-slide{
+    font-size: 16px;
+  }
+  .core-text-slide{
+    font-size: 21px;
+  }
+}
