@@ -30,3 +30,16 @@ border-top: 1px solid rgba(21, 21, 21, 0.32);
   align-items: center;
   gap: 24px;
 }
+@media only screen and (min-width: 1440px) {
+.footer-container{
+  flex-direction: row;
+  justify-content: space-between;
+padding: 64px 185px;
+}
+.footer-text{
+  font-size: 20px;
+}
+.footer-navigation{
+  font-size: 20px;
+}
+}
