@@ -1,0 +1,93 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./footer.css');
+
+
+.background {
+font-family: "Itim", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #151515;
+    text-align: left;
+}
+.policy-link{
+    width: 24px;
+    height: 24px;
+}
+.privacy-title {
+font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.04em;
+    color: #151515;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    color: #151515;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.policy-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.mail-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.policy-span {
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1439px) {
+    .background{
+        font-size: 24px;
+    }
+    .policy-link{
+        width: 41px;
+        height: 41px;
+    }
+    .privacy-title {
+font-size: 50px;
+        margin-top: 0px;
+    }
+
+    .policy-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
