@@ -48,7 +48,10 @@ font-family: "Inter", sans-serif;
     gap: 12px;
     margin-bottom: 30px;
 }
-
+.terms-list{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .policy-list {
     list-style-type: disc;
     padding-left: 30px;
@@ -89,5 +92,7 @@ font-size: 50px;
         padding-left: 40px;
         padding-right: 40px;
     }
-
+.policy-subtitle{
+    font-size: 30px;
+}
 }
