@@ -2,55 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/longmeadow/favicon.svg" />
+    <link rel="icon" type="image/png" href="/longmeadow/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap"
+        rel="stylesheet">
+    <title>Long Meadow</title>
     <script type="module" crossorigin src="/longmeadow/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/longmeadow/assets/styles-X9THPhCB.css">
+    <link rel="stylesheet" crossorigin href="/longmeadow/assets/styles-DG6gf8Ku.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+    
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="home-section" id="home">
+    <div class="container home-container">
+        <div class="home-wrapper">
+            <h1 class="home-title">Long Meadow</h1>
+            <p class="home-text">Look, it's just a simple puzzle - the way puzzles should be, you know?</p>
+            <div class="home-line"></div>
+            <div class="home-text-wrapper">
+                <p class="home-text-two">You’re given a set of pieces and an empty outline. No bells and whistles or any of that crazy stuff. It's just you and
+                the pieces, and then that satisfying click when something finally fits right.</p>
+                <p>Drag each piece into the correct space. Rotate when you need to. Put it together piece by piece, one move at a time.</p>
+            </div>
+        </div>
+            <picture>
+                <source srcset="/longmeadow/assets/desk-CI5dYID6.png 1x, /longmeadow/assets/desk@2x-DQR-qlhe.png 2x" media="(min-width: 1440px)" />
+                <source srcset="/longmeadow/assets/mob-CvOPlFXG.png 1x, /longmeadow/assets/mob@2x-D6P1lhLv.png 2x" media="(max-width: 1439px)" />
+                <img src="/longmeadow/assets/mob-CvOPlFXG.png" alt="Long Meadow" loading="lazy" />
+            </picture>  
+    </div>
+</section>
+<section class="what-section" id="what">
+    <div class="container">
+        <div class="what-title-container">
+            <img src="data:image/png;base64,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" alt="icon" loading="lazy">
+            <h2>What This Game Is</h2>
+            <div class="what-line"></div>
+        </div>
+        <div class="what-text">
+            <p>Just ordinary piece puzzles, but <br class="mob"/> we've put real care into them.</p>
+            <p>Shape Assembly's pretty straightforward, honestly - you've got these<br class="desk"/> scattered pieces and you need to fit<br class="mob"/> them into the
+            right spots to<br class="desk" /> complete the shape. The<br class="mob" /> goal is straightforward, and that’s the point.<br class="desk" /> It’s a<br class="mob" /> game for people who like
+            clarity.</p>
+            <p>Each level starts messy and ends calm. You don’t “win” by rushing. You win<br class="desk" /> by noticing. By testing. By trusting your
+            eyes.</p>
+        </div>
+    </div>
+</section>
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
+    
 
   </body>
 </html>
